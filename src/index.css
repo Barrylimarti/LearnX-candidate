@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-size: 16px;
+}
+
+@media screen and (max-width: 639.9999999px) {
+	:root {
+		font-size: 12px;
+	}
+}
+
+/* @media screen and (min-width: 640px) and (max-width: 1279.9999999px) {
+	:root {
+		font-size: 14px;
+	}
+} */
+
+@font-face {
+	font-family: "Mona Sans";
+	src: url("/fonts/Mona-Sans.woff2") format("woff2 supports variations"),
+		url("/fonts/Mona-Sans.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-stretch: 75% 125%;
+}
+
+/* html {
+	font-family: "Mona Sans";
+} */
+
+*:not(code, kbd, samp, pre, code *, kbd *, samp *, pre *) {
+	font-family: "Mona Sans", Arial, Helvetica, sans-serif;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+#root {
+	width: 100%;
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100vh;
+	min-height: 100vh;
+}
+
+img {
+	pointer-events: none;
+}
+
+.image-gallery-image {
+	max-height: 30rem !important;
+	/* min-height: 20rem !important; */
+	object-fit: contain;
+}
+
+.Toastify__toast-body > div {
+	max-width: 100%;
+}
