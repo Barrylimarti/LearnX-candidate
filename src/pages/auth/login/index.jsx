@@ -40,7 +40,7 @@ const Login = () => {
         localStorage.setItem("refreshToken", refreshToken);
         localStorage.setItem("lastRefresh", Date.now());
         setUser((_) => user);
-        navigate(user.startCompleted ? "/home" : "/start");
+        navigate(user.startCompleted ? "/home" : "/register/create");
       }
     } catch (error) {
       // console.error(error);
